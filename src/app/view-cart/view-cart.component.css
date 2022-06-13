@@ -1,0 +1,11 @@
+div{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 300px;
+}
+
+h2{
+    color: black;
+}

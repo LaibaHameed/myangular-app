@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="product-section layout-padding d-flex">
+      <div class="col-sm-6 col-lg-3 mt-4" *ngFor="let Data of MyDataArray let i=index" >
+        <div class="box justify-content-center">
+          <div class="img-box">
+            <img [src]="Data.Image[1]" alt="">
+            <!-- <img *ngFor="let NewData of Data.Image"  [src]="NewData" alt="">{{i}} for nested lopp to get object ARRAY -->
+            <a class="add_cart_btn"  (click)="GoToViewProduct(Data._id)"> Add to Cart</a>
+          </div>
+          <div class="detail_box justify-content-center">
+            <h5></h5>
+            <div class="product_info">
+              <h5>{{Data.Name}}</h5>
+              <h5><span>$</span>300</h5>
+              <div class="star_container justify-content-center">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
