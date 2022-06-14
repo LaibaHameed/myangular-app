@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import User from '../JSONData/User.json'
+// yaha phly file import krni ha 
+import User from '../JSONData/User.json' 
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +19,7 @@ export class FirstDataService {
 
 
   // Products
-
+//  jb b data ko access krna hi ga toh is object ko call karin gy GetData()
   GetData(){
     return this.DummyData;
   }

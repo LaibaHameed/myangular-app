@@ -10,11 +10,13 @@ export class MessengerService {
   //* ye ReplaySubject ik component sy dosre component ko data transfer krta ha, is mai hm ny (1) is liye dia k wo ik hi object return kare
 //  _Sunject ki jaga apni mrzi sy name rkh skty hain
   _Subject = new ReplaySubject(1);
+  // ReplaySubject rxjs ki class ha ye 
 
   constructor() { }
 //* 
 //  MessageAndData/SendMessageWithData ki jaga apni mrzi sy name rkh skty hain
   SendMessageWithData(PayLoad:Boolean){
+    // replay class k sath sirf boolean type hi lgy gi
     this._Subject.next(PayLoad);
   }
 

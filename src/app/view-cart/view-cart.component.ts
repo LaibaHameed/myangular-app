@@ -12,13 +12,15 @@ export class ViewCartComponent implements OnInit {
 
   //? Data ka name apni mrzi sy rkh skty hain
   Data: any;
-  DataFromMyService: any = [];
 
+  
+  DataFromMyService: any = [];
 
   publicId: any;
   FilteredArray: any = [];
 
-  // ImageArray:any = [];
+  CartQuantity:Number = 0;
+  ProductQuantity:any;
 
   constructor(
     private _MessengerService: MessengerService,
@@ -34,7 +36,7 @@ export class ViewCartComponent implements OnInit {
     );
 
     // console.log(this.Data);
-    this.GetDataFromMyService();
+    this.GetDataFromMyService(); 
   }
 
   // new method
@@ -51,6 +53,14 @@ export class ViewCartComponent implements OnInit {
     }
 
     this.FilteredArray = this.DataFromMyService.filter((Result: any) => { return (Result._id === this.Data) });
+
+  }
+
+  AddQuantity(){
+
+  }
+
+  SubQuantity(){
 
   }
 

@@ -15,6 +15,7 @@ export class ProductsComponent implements OnInit {
 
   constructor(
     private _DataService:FirstDataService,
+    // import router which is from angular/core 
     private _Router:Router,
     private _MesssengerService:MessengerService,
     private _NonVolatileService:NonVolatiledService
@@ -33,9 +34,11 @@ export class ProductsComponent implements OnInit {
   }
 
   GoToViewProduct(Id:any){
+    // arugment zaroor dena ha with type
     // console.log(Id);
     this._NonVolatileService.setDataFromLocalStorage(Id);
-    this._MesssengerService.SendMessageWithData(Id);    
+    this._MesssengerService.SendMessageWithData(Id);  
+      // 2sry page mai jain gy 
     this._Router.navigate(['view-cart'])  
   }
 

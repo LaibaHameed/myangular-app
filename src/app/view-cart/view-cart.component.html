@@ -1,4 +1,18 @@
-<div class="container my-4">
+<div class="container my-4 image">
     <h2 class="mt-4 ">{{FilteredArray[0].Name}}</h2>
     <img class="my-3" *ngFor="let Data of FilteredArray[0].Image" [src]="Data" alt="">
+</div>
+
+<div class="container my-4">
+    
+<h3>Cart Controls</h3>
+<button type="button" class="btn btn-outline-secondary mx-3" (click)="AddQuantity()">+</button>
+<button type="button" class="btn btn-outline-secondary mx-3" (click)="SubQuantity()">-</button>
+
+</div>
+
+  <div class="container bg-light my-4" *ngIf="CartQuantity !== 0">
+    <h5 class="pt-2">Quantity:{{CartQuantity}}</h5>
+    <button type="button" class="btn btn-outline-secondary  m-3">+</button>
+    <button type="button" class="btn btn-outline-secondary  m-3">-</button>
 </div>

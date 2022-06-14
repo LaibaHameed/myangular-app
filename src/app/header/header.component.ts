@@ -16,5 +16,9 @@ export class HeaderComponent implements OnInit { // is ka mtlb ha k jb ye load h
   ngOnInit(): void {  // 3sra function
   }
 
+  IncrementCartValue(){
+    this.CartIncrement++;
+  }
+
 }
 
