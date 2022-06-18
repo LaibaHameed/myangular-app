@@ -12,6 +12,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DashBoradComponent } from './dash-borad/dash-borad.component';
 import { ProductsComponent } from './products/products.component';
 import { ViewCartComponent } from './view-cart/view-cart.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({ // @decolartor ngModule extra information provide krta ha.... ye meta data ha
   declarations: [ //wo jo hm ny kod components banany hain wo yaha aye gy
@@ -24,7 +26,9 @@ import { ViewCartComponent } from './view-cart/view-cart.component';
     ContactUsComponent,
     DashBoradComponent,
     ProductsComponent,
-    ViewCartComponent
+    ViewCartComponent,
+    SignUpComponent,
+    LoginComponent
   ],
   imports: [  // yaha wo jo angular walo ny phly sy banye howy hain
     BrowserModule,

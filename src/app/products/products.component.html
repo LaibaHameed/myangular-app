@@ -1,12 +1,15 @@
 <div class="container-fluid">
     <div class="product-section layout-padding d-flex">
+      <!-- 8: ngFor lga k Data MyDataarray ko call kia kiu k is mai ab data store ha-->
+      <!-- let Data of MyDataArray mai Data ki jaga ap koi b name rkh skty hain -->
       <div class="col-sm-6 col-lg-3 mt-4" *ngFor="let Data of MyDataArray let i=index" >
         <div class="box justify-content-center">
           <div class="img-box">
             <img [src]="Data.Image[1]" alt="">
             <!-- <img *ngFor="let NewData of Data.Image"  [src]="NewData" alt="">{{i}} for nested lopp to get object ARRAY -->
+             <!-- 2nd step click action -->
+             <!--2nd step:1-->
             <a class="add_cart_btn"  (click)="GoToViewProduct(Data._id)"> Add to Cart</a>
-            <!-- 2nd step click action -->
           </div>
           <div class="detail_box justify-content-center">
             <h5></h5>

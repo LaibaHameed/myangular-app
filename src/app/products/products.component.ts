@@ -9,37 +9,42 @@ import { NonVolatiledService } from '../shared/folder/non-volatiled.service';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
+
 export class ProductsComponent implements OnInit {
 
-  MyDataArray:any = [];
+  // 5: khali array bani or is ki type any is liye rkhi k array mai images string or numbers aye gy
+  MyDataArray: any = [];
 
   constructor(
-    private _DataService:FirstDataService,
+    // 4:Dependency injection k through file ko access kia
+    private _DataService: FirstDataService,
     // import router which is from angular/core 
-    private _Router:Router,
-    private _MesssengerService:MessengerService,
-    private _NonVolatileService:NonVolatiledService
+    private _Router: Router,
+    private _MesssengerService: MessengerService,
+    private _NonVolatileService: NonVolatiledService
   ) { }
 
+
+
   ngOnInit(): void {
+    // 7: phir is function ko call kr lia
     this.GetDataFromMyComponent();
   }
 
-  GetDataFromMyComponent(){
-    
+  // 6: ik function banaya or is mai MyDataArray mai Service file ka jo GetData() fun rkha data acess krny k liye
+  GetDataFromMyComponent() {
     this.MyDataArray = this._DataService.GetData();
-    
     // console.log(this.MyDataArray);
-
   }
 
-  GoToViewProduct(Id:any){
+
+  GoToViewProduct(Id: any) {
     // arugment zaroor dena ha with type
     // console.log(Id);
     this._NonVolatileService.setDataFromLocalStorage(Id);
-    this._MesssengerService.SendMessageWithData(Id);  
-      // 2sry page mai jain gy 
-    this._Router.navigate(['view-cart'])  
+    this._MesssengerService.SendMessageWithData(Id);
+    // 2sry page mai jain gy 
+    this._Router.navigate(['view-cart'])
   }
 
 }

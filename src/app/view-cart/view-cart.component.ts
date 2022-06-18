@@ -23,19 +23,20 @@ export class ViewCartComponent implements OnInit {
   ProductQuantity:any;
 
   constructor(
+    // 2nd step:8 import MessengerService through dependency injection
     private _MessengerService: MessengerService,
     private _DataService: FirstDataService,
     private _NonVolatileService: NonVolatiledService
   ) { }
 
   ngOnInit(): void {
+    // 2nd step:9 
     this._MessengerService.GetMessageWithData().subscribe(
-      (DataComungFromMyService: any) => {
-        this.Data = DataComungFromMyService;
+      (DataComingFromMyService: any) => {
+        this.Data = DataComingFromMyService;
       }
     );
 
-    // console.log(this.Data);
     this.GetDataFromMyService(); 
   }
 

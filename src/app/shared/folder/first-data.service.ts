@@ -1,15 +1,12 @@
 import { Injectable } from '@angular/core';
-// yaha phly file import krni ha 
+//1: yaha phly file import krni ha 
 import User from '../JSONData/User.json' 
 
 @Injectable({
   providedIn: 'root'
 })
 export class FirstDataService {
-   // Dumy Data banya ha ... lekin ye data backend sy aye ga :29
-
-  // Products code
-
+   //2: User.json ki file sy jo sara data aye ga wo DummyData mai store ho gya h
    DummyData = User
 // is ki jaga ye ho ga
 // ? DummyData = "www.ecomerece.heroku.com/getData"
@@ -19,7 +16,8 @@ export class FirstDataService {
 
 
   // Products
-//  jb b data ko access krna hi ga toh is object ko call karin gy GetData()
+  // 3: ik GetData ka function banaya jo DummyData ko return kr rha ha
+//  jb b data ko access krna ho ga toh is object ko call karin gy GetData()
   GetData(){
     return this.DummyData;
   }
