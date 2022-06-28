@@ -21,6 +21,7 @@ export class ProductsComponent implements OnInit {
     // import router which is from angular/core 
     private _Router: Router,
     private _MesssengerService: MessengerService,
+      //3nd step: 3
     private _NonVolatileService: NonVolatiledService
   ) { }
 
@@ -41,6 +42,7 @@ export class ProductsComponent implements OnInit {
   GoToViewProduct(Id: any) {
     // arugment zaroor dena ha with type
     // console.log(Id);
+      //3nd step: 4
     this._NonVolatileService.setDataFromLocalStorage(Id);
     this._MesssengerService.SendMessageWithData(Id);
     // 2sry page mai jain gy 
