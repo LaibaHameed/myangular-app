@@ -7,7 +7,9 @@
       "https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/m/i/microsoft_surface_headphones_2_1_-_tejar_1.jpg",
       "https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/u/r/urbanears_plattan_2_bluetooth_headphones1_-_tejar.jpg",
       "https://static-01.daraz.pk/p/760096faf42b32cc7d8c20d8e9efaf7b.jpg"
-    ]
+    ],
+    "qty":10,
+      "NewQuantity":0
   },
   {
     "_id": 2,
@@ -16,7 +18,9 @@
       "https://www.fonesquare.pk/wp-content/uploads/2021/01/Tronsmart-Encore-S2-Plus-Neckband-Sport-Wireless-Bluetooth-Earphones.jpg",
       "https://www.fonesquare.pk/wp-content/uploads/2021/01/Soundpeats-Force-HD-Bluetooth-Headphones.jpg",
       "https://m.media-amazon.com/images/I/51-JsO-OCxL._SL1500_.jpg"
-    ]
+    ],
+    "qty":15,
+      "NewQuantity":0
   },
   {
     "_id": 3,
@@ -25,7 +29,9 @@
       "https://gloimg.gbtcdn.com/soa/gb/item/6553270986737840128/16150/76e1e8d26723.jpg",
       "https://gloimg.gbtcdn.com/soa/gb/item/6518456211414831104/15825/a16aca5c3fd6.jpg",
       "https://www.pakmobizone.pk/wp-content/uploads/2020/09/OPPO-Enco-W51-True-Wireless-Headphones-Floral-White-1.png"      
-    ]
+    ],
+    "qty":18,
+      "NewQuantity":0
   },
   {
     "_id": 4,
@@ -34,6 +40,8 @@
       "https://sc04.alicdn.com/kf/H2f8e682a058d4a5cbc1abd0b1c461d83x.jpg",
       "https://m.media-amazon.com/images/I/51H9Ij8OfrL._SL1000_.jpg",
       "https://www.bhphotovideo.com/images/images1000x1000/bogen_communications_bchm_headset_microphone_for_681376.jpg"
-    ]
+    ],
+    "qty":0,
+      "NewQuantity":0
   }
 ]

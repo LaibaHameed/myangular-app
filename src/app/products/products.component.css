@@ -47,9 +47,10 @@
 
  .box .img-box .add_cart_btn{
     display: inline-block;
-    width: 100px;
+    border: 0 !important;
+    width: 150px;
     border-radius: 2px;
-    text-align: center;
+    text-align: center !important; 
     height: 45px;
     line-height: 45px;
     background-color: black;
@@ -64,8 +65,12 @@
     z-index: 3;
 }
 
+.active:hover{
+    background-color: black;
+}
+
  .box .img-box .add_cart_btn:hover{
-    background-color:rgb(224, 6, 79);
+    background-color:cadetblue;
     color: white !important;
 }
 
@@ -94,7 +99,7 @@
 }
 
 .star_container{
-    color:#ce6a85;
+    color:cadetblue;
 }
  .box:hover .img-box::before{
     opacity: .55;
