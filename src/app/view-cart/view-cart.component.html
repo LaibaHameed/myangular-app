@@ -13,8 +13,11 @@
 
 </div>
 
-  <div class="container bg-light my-4" *ngIf="CartQuantity !== 0">
-    <h5 class="pt-2">Quantity:{{CartQuantity}}</h5>
-    <button type="button" class="btn btn-outline-secondary  m-3">+</button>
-    <button type="button" class="btn btn-outline-secondary  m-3">-</button>
+
+<div *ngIf="ShowBox===true">
+  <div *ngFor="let Data of LocalStorageCartArray" class="row justify-content-evenly align-items-center">
+      <img [src]="Data.Image[1]" alt="" class="img col-6">
+      <p class="text-center col-4">SelectedQuantity:{{Data.NewQuantity}}</p>
+  </div>
+  <p>TotalCartQuantity:{{CartQuantity}}</p>
 </div>
