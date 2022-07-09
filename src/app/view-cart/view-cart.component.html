@@ -2,7 +2,9 @@
 
 <div class="container my-4 image">
     <h2 class="mt-4 ">{{FilteredArray[0].Name}}</h2>
-    <img class="my-3" *ngFor="let Data of FilteredArray[0].Image" [src]="Data" alt="">
+    <div class="img-box">
+      <img class="my-3" *ngFor="let Data of FilteredArray[0].Image" [src]="Data" alt="">
+    </div>
 </div>
 
 <div class="container my-4">
@@ -15,7 +17,7 @@
 
 
 <div *ngIf="ShowBox===true">
-  <div *ngFor="let Data of LocalStorageCartArray" class="row justify-content-evenly align-items-center">
+  <div *ngFor="let Data of LocalStorageCartArray" class="col justify-content-evenly align-items-center">
       <img [src]="Data.Image[1]" alt="" class="img col-6">
       <p class="text-center col-4">SelectedQuantity:{{Data.NewQuantity}}</p>
   </div>

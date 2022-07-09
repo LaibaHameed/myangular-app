@@ -12,8 +12,7 @@
             <!-- <a class="add_cart_btn"  (click)="GoToViewProduct(Data._id)  [ngClass]="Data.qty === 0 ? 'btn-outline-danger': 'btn-outline-success' [disabled]="Data.qty === 0" >
               {{Data.qty ===0 ? 'Out of Stock' : 'Add To Cart'}}
             </a> -->
-            <button  class="add_cart_btn" (click)="GoToViewProduct(Data._id)" [disabled]="Data.qty === 0"
-            >
+            <button  class="add_cart_btn" (click)="GoToViewProduct(Data._id)" [disabled]="Data.qty === 0">
              {{Data.qty ===0 ? 'Out of Stock' : 'Add To Cart'}}
            </button>
           </div>

@@ -7,7 +7,7 @@ import User from '../JSONData/User.json'
 })
 export class FirstDataService {
    //2: User.json ki file sy jo sara data aye ga wo DummyData mai store ho gya h
-   DummyData = User
+   DummyData = User;
 // is ki jaga ye ho ga
 // ? DummyData = "www.ecomerece.heroku.com/getData"
 

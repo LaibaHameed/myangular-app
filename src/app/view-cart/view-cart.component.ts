@@ -54,6 +54,7 @@ export class ViewCartComponent implements OnInit {
     );
 
     this.GetDataFromMyService(); 
+
     this.LocalStorageCartArray = this._NonVolatileService.GetProdcutToLocalStorage();
     if(Object.entries(this.LocalStorageCartArray).length !== 0){
       this.ShowBox = true;
@@ -62,23 +63,21 @@ export class ViewCartComponent implements OnInit {
 
   // new method
     //2nd step: 11
-  GetDataFromMyService() {
+   GetDataFromMyService() {
       //2nd step: 12
     this.DataFromMyService = this._DataService.GetData();
 
     // 3rd step 6
     if (this.Data === undefined) {
-
       const localStorageID = this._NonVolatileService.getDataFromLocalStorage();
       this.FilteredArray = this.DataFromMyService.filter((Result: any) => { return (Result._id === localStorageID) });
       this.ProductQuantity = this.FilteredArray[0].qty;
       return
-
     }
       //2nd step: 13
     this.FilteredArray = this.DataFromMyService.filter((Result: any) => { return (Result._id === this.Data) });
     this.ProductQuantity = this.FilteredArray[0].qty;
-    console.log(this.FilteredArray);
+    // console.log(this.FilteredArray);
 
   }
 
